@@ -21,16 +21,12 @@ h2 {
     text-align: center;
 }
 
+
 p {
     
     color: #01571E;
 }
 
-a {
-    color: black;
-    font-weight: 700;
-    text-decoration: none;
-}
 
 
 .botao-primario {
@@ -41,24 +37,32 @@ a {
     cursor: pointer;
 }
 
-.lista-projetos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
+
 
 .card-projeto {
-  flex: 1 1 250px;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #01571E;
-  background-color: #2eb600;
+  background-color: #2eb600; /* O verde que você usou */
+    color: white;
 }
 
 .text-ler {
     line-height: 1.6;
     padding: 20px;
     margin: 20px 0;
+}
+
+.lista-projetos{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fffbdc;
+}
+
+.lista-projetos th, 
+.lista-projetos td {
+   border: 1px solid #01571E;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 
@@ -68,12 +72,56 @@ a {
     border-radius: 3px;
 }
 
-#sobre {
-    padding: 20px;
-    margin: 20px 0;
+#cabecalho a{
+    color: #fffbdc;
+    font-weight: 20;
+    text-decoration: none;
 }
 
+#sobre {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
 
+#sobre img {
+    border: 4px solid #01571E;
+    max-width: 300px;
+    height: auto;
+}
+
+#sobre p {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+#projetos {
+  padding: 20px;
+    display: block;
+}
+
+#projetos a {
+    color: rgb(1, 32, 3);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#painel-heroi{
+    background-color: #f0fdf4;
+    border: 2px dashed #01571E; 
+    padding: 25px;
+    box-shadow: 5px 5px 0px #01571E;
+    
+}
+
+#painel-heroi ul {
+    list-style: none;
+    padding-bottom: 15px;
+}
 
 #contato {
     background-color: #003d0d;
@@ -81,6 +129,29 @@ a {
     
     min-height: 500px;
     box-shadow: 0 0 15px 5px #003d0d;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #fffbdc;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+#contato h2{
+    text-align: center; 
+    color:#fffbdc;
 }
 
 
@@ -112,7 +183,41 @@ footer {
         flex-direction: column;
     }
 
-    .lista-projetos {
-    flex-direction: column;
+    .lista-projetos thead {
+    display: none;
+
   }
+
+  .lista-projetos tr {
+        margin-bottom: 20px;
+        border: 2px solid #01571E;
+        border-radius: 10px;
+        background-color: #fffbdc;
+        overflow: hidden;
+    }
+
+    .card-projeto {
+        background-color: #2eb600; /* Destaque verde da Imagem 1 */
+    }
+
+  .lista-projetos, .lista-projetos tbody, .lista-projetos tr, .lista-projetos td {
+        display: block;
+        width: 100%;
+    }
+
+    .lista-projetos td {
+        border: none;
+        text-align: center;
+        padding: 12px 20px;
+        word-wrap: break-word;
+    }
+
+    .lista-projetos td:first-child {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #01571E;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #01571E;
+        background-color: rgba(1, 87, 30, 0.05);
+    }
 }
