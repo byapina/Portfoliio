@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #fffbdc;
+    font-family: 'Poppins', sans-serif;
+    color: #01571E;
+}
+
+
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #01571E;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    
+    color: #01571E;
+}
+
+a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.botao-primario {
+    background-color: transparent;
+    border: 2px solid #2eb600;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card-projeto {
+  flex: 1 1 250px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #01571E;
+  background-color: #2eb600;
+}
+
+.text-ler {
+    line-height: 1.6;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+#cabecalho {
+    background-color: #01571E;
+    border-bottom: 20px;
+    border-radius: 3px;
+}
+
+#sobre {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+
+#contato {
+    background-color: #003d0d;
+    color: #fffbdc;
+    
+    min-height: 500px;
+    box-shadow: 0 0 15px 5px #003d0d;
+}
+
+
+
+
+#sobre, #projetos, #contato, #painel-heroi {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  
+}
+
+
+
+th, td {
+    padding: 0.6em;
+    border: 1px solid #01571E;
+}
+
+footer {
+    text-align: center;
+    color: #fffbdc;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .lista-projetos {
+    flex-direction: column;
+  }
+}
