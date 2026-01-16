@@ -21,6 +21,7 @@ h2 {
     text-align: center;
 }
 
+
 p {
     
     color: #01571E;
@@ -114,8 +115,13 @@ p {
     border: 2px dashed #01571E; 
     padding: 25px;
     box-shadow: 5px 5px 0px #01571E;
+    
 }
 
+#painel-heroi ul {
+    list-style: none;
+    padding-bottom: 15px;
+}
 
 #contato {
     background-color: #003d0d;
@@ -142,6 +148,12 @@ p {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
+
+#contato h2{
+    text-align: center; 
+    color:#fffbdc;
+}
+
 
 
 
